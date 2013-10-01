@@ -1,14 +1,15 @@
+/*Still for body tagget som hentet fra Janis sin mal( baggrund farge, skrift farge, skrifttype */
   body {
   padding-left: 11em;
    font-family: Georgia, "Times New Roman",
           Times, serif;
   color: white;
     background-color: #9B2766 }
-
+/*bruker CSS til at velge farge størelse og skrift type til overskriften*/
   h1 {
     font-family: Helvetica, Geneva, Arial,
           SunSans-Regular, sans-serif }
-	
+	/*farge, størelse og skrifttype til Many skriften til venstre */
 	ul.navbar li {
     background: #7B07A9 ;
     margin: 0.5em 0;
