@@ -1,12 +1,59 @@
+<!DOCTYPE html>
+Nadia Nabiyar, Gruppe 1661
 <html>
 <head>
-<title> My First Styles Page </title>
-<hr></hr>
-	
-		
-	<div align="center">
+ <meta charset="utf-8">
+ <title>Programmeringsspråk (versjon 0.0.1)</title>
+ 
+<script type="text/javascript" src="proglangs.js"></script>
+ 
+ <link rel="stylesheet" href="proglangs.css" type="text/css" media="all" />
+
+ 
+</head>
+
+
+<body>
+
+
+
+	<ul id="liste"class="listestil">
+		<li id="top_5">ActionScript</li>
+		<li id="top_5">AppleScript</li>
+		<li id="top_5">Asp</li>
+		<li id="top_5">BASIC</li>
+		<li id="top_5">C</li>
+		<li id="de_neste_3">C++</li>
+		<li id="de_neste_3">Clojure</li>
+		<li id="de_neste_3">COBOL</li>
+		<li id="de_neste_4">ColdFusion</li>
+		<li id="de_neste_4">Erlang</li>
+		<li id="de_neste_4">Fortran</li>
+		<li id="de_neste_4">Groovy</li>
+		<li id="to_i_midten">Haskell</li>
+		<li id="to_i_midten">Java</li>
+		<li id="de_nest_siste">JavaScript</li>
+		<li id="de_nest_siste">Lisp</li>
+		<li id="de_nest_siste">Perl</li>
+		<li id="de_nest_siste">PHP</li>
+		<li id="de_siste_4">Python</li>
+		<li id="de_siste_4">Ruby</li>
+		<li id="de_siste_4">Scala</li>
+		<li id="de_siste_4">Scheme</li>
+	</ul>
+-->
+
+<!-- Navigation MENU -->
+<ul class="navbar">
+  <li><a href="proglangs.html">Hjem</a>
+  <li><a onclick="popupboks()" href="proglangs.html">Kronologisk</a>
+  <li><a onclick="popupboks()" href="proglangs.html">Hierarkisk</a>
+  <li><a onclick="popupboks()" href="proglangs.html">Alfabetisk</a>
+</ul>
+
+<div id="listestil">	 <!-- Sentrer rullegardin liste og utdataboks ved hjelp av div -->
 <form>
-	<label for="spraak">Velg et språk:</label>
+	<label for="spraak">Søk i programmeringsspråk:</label>
 	<select name="velgsspraak" id="spraak" onChange="skrivTilUtdataBoks(this)">
 		<option value="ActionScript">ActionScript</option>
 		<option value="AppleScript">AppleScript</option>
@@ -30,40 +77,14 @@
 		<option value="Ruby">Ruby</option>
 		<option value="Scala">Scala</option>
 		<option value="Scheme">Scheme</option>
-	<select>
-	</form>
-	
-	<span id="utdataboks">Du har ikke valgt noe programmeringsspråk enda. Velg ett fra rullegardin-listen!</span>
-	
-	</div>
-<link rel= "stylesheet" href="LAB2.CSS">
-<link rel= "stylesheet" href="LAB2.JS">
+	</select>
+</form>
 
 
-</head>
- <style type="text/css">
- 
-  </style>
-  
-<body>
-<!--Menu-->
-<ul class="navbar">
-<li><a href="index.html">Home page </a>
-<li><a href="musings.html">Musings</a>
-<li><a href="town.html">My Town</a>
-<li><a href="links.html">Links</a>
-</ul>
+</div>
 
-<!--Main content-->
-<h1>My First Styles Page</h1>
-<p>Welcome to my styles page</p>
-<p>It lacks images, but at least it has style.
-And it has links, even if they don't go
-anywhere;
-
-<p>There should be more here, but I don't know
-what yet.
-
-<P>Made 5 April 2004<br>
-  by myself.</P>
+<h1>Programmeringsspråk, hva er det?</h1>
+<!-- Feltet nedenfor vil bli manipulert av prolangs.js når noe blir valgt i rullegardin listen -->
+<span id="utdataboks">Velkommen til en mystisk verden av programmeringsspråk</span>
+</body>
 </html>

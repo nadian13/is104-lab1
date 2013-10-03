@@ -1,41 +1,72 @@
-/*Still for body tagget som hentet fra Janis sin mal( baggrund farge, skrift farge, skrifttype */
-  body {
-  padding-left: 11em;
-   font-family: Georgia, "Times New Roman",
+/* Stil for body taggen, som hentet fra Janis sin mal */
+ body {
+    padding-left: 11em;
+    font-size: 18px;
+    font-family: Garamond, "Times New Roman",
           Times, serif;
-  color: white;
-    background-color: #9B2766 }
-/*bruker CSS til at velge farge størelse og skrift type til overskriften*/
+    color: orange;
+    background-color: #222222}
+ /* Stil for menyen til venstre */
+  ul.navbar {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 2em;
+    left: 1em;
+    width: 9em }
+  /* Stil for heading1 */
   h1 {
     font-family: Helvetica, Geneva, Arial,
           SunSans-Regular, sans-serif }
-	/*farge, størelse og skrifttype til Many skriften til venstre */
-	ul.navbar li {
-    background: #7B07A9 ;
+   /* Stil for listeelementer */
+  ul.navbar li {
+    background: white;
     margin: 0.5em 0;
     padding: 0.3em;
-    border-right: 1em solid black }
-	
+    border-right: 1em solid orange }
+/* Stil for linker i meny */
   ul.navbar a {
     text-decoration: none }
-	
+/* Stil for ikke-besøkte linker */
   a:link {
-    color: white }
-	
+    color: blue }
+/* Stil for besøkte linker */
   a:visited {
     color: purple }
-	
-	 address {
+  address {
     margin-top: 1em;
     padding-top: 1em;
     border-top: thin dotted }
 
-	
-	ul.navbar {
+ /* Nedenfor er stiler for IDer brukt i LAB1 */
+#top_5 {
+	color: purple;
+}
+
+#de_neste_3 {
+	color: red;
+}
+
+#de_neste_4 {
+	color: green;
+}
+
+#to_i_midten {
+	color: orange;
+}
+
+
+#de_nest_siste {
+	color: gray;
+}
+
+#de_siste_4{
+	color: blue;
+}
+
+#listestil {
+	color: gray;
 	list-style-type: none;
-	padding:0;
-	margin:0;
-position : absolute;
-top:2em;
-left:1em;
-width:9em }	
+	text-align: left;
+}
