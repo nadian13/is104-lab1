@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="utf-8">
@@ -8,7 +9,7 @@
 	<script src="js/jcanvas.min.js"></script>
 	
 	<!-- Husk å legge til CSS filen din her" -->
-	
+	<link rel="stylesheet" href="lab3.css" type="text/css" />
     <script>
 	$(function() {
 		// Definerer variablen canvas med referanse til objekt (i DOM) med id my_canvas
@@ -19,20 +20,20 @@
 			x: canvas.offset().left,
 			y: canvas.offset().top
 		};
-		
+
 		// Her "fanges" click hendelse opp med jQuery metoden
 		// e refererer til hendelse (event) som da gir mulighet til å kalle tilgjengelige metoder
 		canvas.on('click', function(e) {
 
 		// Setter inn denne metode for å unngå standardrespons på standardhendelser til mus
 			//e.preventDefault();
-		
+
 		// Bruker pageX og pageY for å få posisjonen til mus i forhold til hele siden (ikke my_canvas)
 			var mouse = {
 				x: e.pageX - canvasPosition.x,
 				y: e.pageY - canvasPosition.y
 			}
-		
+
 		/*
 		   nå har du lokale koordinater mouse.x og mouse.y
 		   som er beregnet i forhold til det lokale 
@@ -41,10 +42,16 @@
 		*/
 			// Skriv koordinatene ut til console basert på lab3_v2
 			// Kopier fra lab2_v2
-			
+			console.log( "(x,y) = ("+mouse.x+","+mouse.y+")" );
+
 			// Her bare kopieres lignende løsning fra lab3_v2
 			// for å skrive ut til <span> elementnoden
-			
+			$("#x").addClass("horisontal");
+            $("#y").addClass("vertikal");
+			$("#x").html(mouse.x);
+            $("#y").html(mouse.y);
+            $("#my_canvas").addClass("my_canvas");
+
 			// Dette er kode for deloppgave 2
 			// Her er to metoder kalt opp etter hverandre og begge tilhører objektet canvas
 			canvas.clearCanvas({
@@ -54,8 +61,16 @@
 			})
 			.drawText({
 				// Her besvares deloppgave 2 (se lenken til jCanvas dokumentasjon i oppgaveteksten)
+				fillStyle: "#333",
+                x: mouse.x,
+                y: mouse.y,
+                strokeStyle: "#000",
+				strokeWidth: "1",
+                font: "8pt Verdana, sansserif",
+                text: mouse.x + "," + mouse.y
+
 			});
-			
+
 			return false;
 		});
 	}); 
@@ -72,5 +87,7 @@
 	</p>
 	<canvas id="my_canvas" width="200" height="200"></canvas>
 	<!-- Oppgaveløsning skal implementeres her -->
+	<p>Avstand fra den venstre kanten av Canvas er <span id="x"></span></p>
+	<p>Avstand fra den øverste kanten av Canvas er <span id="y"></span></p>
 </body>
 </html>
