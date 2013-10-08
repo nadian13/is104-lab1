@@ -5,13 +5,12 @@
 	<title>Hendelser med jQuery</title>
 	<!-- Husk å legge til CSS filen din her" -->
 	<script src="js/jquery-1.8.1.js"></script>
-	<link rel="stylesheet" href="css/lab3.css" type="text/css" />
     <script>
-
+	
 	$(function() {
 		// Setter en "observatør" for keydown hendelse på noden document.body
 	    $(document.body).on('keydown', function(e) {
-
+		
 		// Sorterer ut de tastetrykkene man ønsker å gi en respons på
 		// Her brukes det en struktur switch som finnes i de fleste programmeringsspråk
 		switch (e.which) {
@@ -19,41 +18,30 @@
 			case 37:
 				// Her og i andre case skal koden for å skrive til innerHTML skrives (deloppgave 0)
 				console.log( 'venstre pil tast trykket!' );
-				var tastetrykk = "venstre pil tast trykket!";
 				break;
         
 			// tastekode for høyre pil
 			case 39:
 				console.log( 'høyre pil tast trykket!' );
-				var tastetrykk = ("høyre pil tast trykket!"); 
 				break;
-
-	// Her skal koden for å behandle andre tastetrykk skrives (deloppgave 0)
-
+			
+			// Her skal koden for å behandle andre tastetrykk skrives (deloppgave 0)
+			
 			// tastekode for pil opp
 			case 38:
 				console.log( 'pil opp tast trykket!' );
-				var tastetrykk = ("pil opp tast trykket!");
 				break;
-
+				
+			
 			// tastekode for pil ned
 			case 40:
 				console.log( 'pil ned tast trykket!' );
-				var tastetrykk = ("pil ned tast trykket!"); 
 				break;
-
-			// hvis vi ikke har trykket en piltast
-			default:
-				console.log( 'en annen tast trykket' );
-				var tastetrykk = ("en annen tast trykket"); 
-				break;
+			
 		}
-		// Skriv ut tastetrykket
-		$("#keypressed").addClass("orange");
-		$("#keypressed").html(tastetrykk);
 		});
-	});
-
+	}
+	
 	</script>
 </head>
 <body>
@@ -67,6 +55,6 @@
 	</p>
 	<p>Man har Console også i andre nettlesere. Bruker du en annen nettleser søk på "JavaScript console" for din nettleser for å finne ut hvordan du kan bruke det.</p>
 	<!-- Oppgaveløsning skal implementeres her -->
-	<p id="keypressed">Trykk en tast for å starte</p>
+	<p id=”keypressed”></p>
 </body>
 </html>
