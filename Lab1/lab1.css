@@ -1,0 +1,29 @@
+#top_5 {
+	color: purple;
+}
+
+#de_neste_3 {
+	color: red;
+}
+
+#de_neste_4 {
+	color: green;
+}
+
+#to_i_midten {
+	color: orange;
+}
+
+
+#de_nest_siste {
+	color: gray;
+}
+
+#de_siste_4{
+	color: blue;
+}
+
+.listestil {
+	list-style-type: none;
+	text-align: center;
+}

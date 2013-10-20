@@ -1,18 +1,17 @@
- .orange {
-   color: orange;
+#my_canvas { 
+    border: solid 3px;
+    width: 200px;
+    height: 200px;
+   color: blue;
    font-size: 2em;
-+}
-+
-+.horisontal {
-+  color: blue;
-+  font-weight:bold;
-+}
-+
-+.vertikal {
-+  color: purple;
-+  font-weight:bold;
-+}
-+
-+.my_canvas {
-+  border: solid black;
- }
+}
+
+horisontal {
+ color: red;
+ font-weight:bold;
+}
+
+vertikal {
+  color: purple;
+  font-weight:bold;
+}
