@@ -1,0 +1,72 @@
+/* Setter margen (margin) og utfylling (padding) til 0, siden det er 
+vanlig med en satt verdi i nettleseren for dette by default. */
+
+body{
+	margin:0;
+	padding:0;
+}
+
+#body-container{
+	width: 415px;					/* Her settes bredden til body-container */
+	height: 500px;					/* Her settes høyden til body-container */
+	margin: 0 auto;					/* Her settes margen til body-container */
+	border: 1px solid #3285ef;		/* Her settes det en ramme rundt body-container */
+}
+
+#body-container .glossary-container{
+	clear: both; /* Forhindrer at objekter flyter på noen av sidene */
+}
+
+
+#body-container .content-container{
+	width: 415px;			/* Her settes bredden til content-container */
+	height: 430px;			/* Her settes høyden til content-container */
+	overflow: auto;			/* Et rullefelt vises når innholdet er større enn den spesifiserte høyden */
+	font-family: 'Arial', Verdana, Tahoma; /* Forskjellige skrifttype-alternativer */
+	font-size: 10pt;		/* Skriftstørrelse på 10 punkter */
+	clear: both; 			/* Forhindrer at objekter flyter på noen av sidene */
+}
+
+#body-container .content-container div{
+	padding-left: 10px;					/* Utfylling settes til 10px */
+	border-bottom: 1px #7109AA solid; 	/* For å adskille hver gruppe har vi en annen farge på nedre del av rammen */
+}
+
+#body-container .content-container p.return-to-top{
+	color: #A001A6; 			/* Farge på "tilbake til toppen" tekst */
+	text-decoration: underline; /* Teksten skal understrekes */
+	text-align: right; 			/* Teksten skal justeres til høgre */
+	margin-right: 10px; 		/* Gir en marg fra høyre på 10px */
+	cursor: pointer;			/* Endrer peker til en 'hånd' */
+}
+
+/* Angir egenskaper for den ikke-ordnede listen */
+
+.firstUL{
+	padding: 0px 0px 0px 10px; 	/* Litt utfylling mot venstre, men ikke mot de andre sidene */
+	margin: 0px;				/* Setter alle marger til 0px */
+	background-color: #03899C;	/* Setter bakgrunnsfarger */
+}
+
+.firstUL li{
+	/* For alle listelementer settes det bakgrunnsbilde ved hjelp av "CSS image sprites" */
+	background: transparent url(img/link_sprite_img.png) no-repeat scroll 0 0;
+	display: inline;							/* Utlistingene vil bli satt på rad (som tekst)*/
+	font-family: 'Tahoma', Verdana, Arial; 		/* Forskjellige skrifttype-alternativer */
+	font-size: 16pt;							/* Setter skriftstørrelese */
+	font-weight: bold;							/* Gjør teksten sikkelig fet */
+	padding: 10px 15px 22px;					/* Setter utfylling til alle sidene */
+	line-height: 70px;							/* Setter linjehøyde*/
+	cursor: pointer;							/* Peker blir om til "hånd"*/
+}
+
+.firstUL li.selected{
+	background: transparent url(img/link_sprite_img.png) no-repeat scroll 0px -57px;
+	color: #ffffff;								/* Setter skriftfarge til hvit */
+	font-weight: bold;							/* Gjør teksten sikkelig fet */
+} 
+
+
+
+
+
